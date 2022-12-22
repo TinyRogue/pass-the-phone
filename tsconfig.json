@@ -1,0 +1,17 @@
+{
+  "extends": "expo/tsconfig.base",
+  "target": "esnext",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "strict": true
+  },
+  "baseUrl": ".",
+  "paths": {
+    "*": [
+      "src/*"
+    ],
+    "tests": [
+      "tests/*"
+    ]
+  }
+}
