@@ -2,16 +2,13 @@
   "extends": "expo/tsconfig.base",
   "target": "esnext",
   "compilerOptions": {
+    "baseUrl": ".",
     "experimentalDecorators": true,
-    "strict": true
+    "strict": true,
+    "paths": {
+      "*": ["src/*"],
+      "screens/*": ["src/screens/*"],
+      "tests": ["tests/*"]
+    }
   },
-  "baseUrl": ".",
-  "paths": {
-    "*": [
-      "src/*"
-    ],
-    "tests": [
-      "tests/*"
-    ]
-  }
 }
